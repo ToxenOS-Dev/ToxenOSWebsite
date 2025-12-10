@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ToxenOS — Lightweight, Secure, Customizable</title>
+  <meta name="description" content="ToxenOS — a lightweight, secure, and customizable operating system with an orange neon aesthetic.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23FF7A1A'/><text x='50' y='60' font-size='40' text-anchor='middle' fill='%23121212' font-family='Arial'>T</text></svg>">
+</head>
+<body class="theme-dark">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand" title="ToxenOS Home">
+        <span class="brand-toxen">Toxen</span><span class="brand-os">OS</span>
+      </a>
+
+      <nav class="nav" id="primaryNav">
+        <a href="#features">Features</a>
+        <a href="#gallery">Screenshots</a>
+        <a href="#whats-new">What's New</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#community">Community</a>
+        <a class="btn btn-docs" href="https://example.com/toxenos-docs" target="_blank" rel="noopener">View Updates & Commands</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="hero-title"><span class="toxen">Toxen</span><span class="os">OS</span></h1>
+          <p class="hero-sub">
+            A lightweight, <span class="accent-underline">secure</span>, and <span class="accent-underline">customizable</span> operating system engineered for performance and stability.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#features">Explore ToxenOS</a>
+            <a class="btn btn-ghost" href="https://example.com/toxenos-docs" target="_blank" rel="noopener">View Documentation</a>
+          </div>
+
+          <ul class="hero-highlights">
+            <li><strong>Optimized</strong> for old & modern hardware</li>
+            <li><strong>Hardened</strong> security defaults</li>
+            <li><strong>Terminal-first</strong> workflows</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <!-- Inline SVG placeholder screenshot to keep this self-contained -->
+          <figure class="preview-frame" aria-hidden="true">
+            <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" class="preview-screenshot" xmlns="http://www.w3.org/2000/svg" role="img">
+              <defs>
+                <linearGradient id="bg" x1="0" x2="1"><stop offset="0" stop-color="#121212"/><stop offset="1" stop-color="#1e1e1e"/></linearGradient>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#bg)"/>
+              <rect x="40" y="40" rx="16" ry="16" width="1120" height="620" fill="#0f0f0f" stroke="#FF7A1A" stroke-opacity="0.12" stroke-width="6"/>
+              <g transform="translate(80,120)">
+                <!-- Title bar -->
+                <rect x="0" y="0" width="1040" height="48" rx="8" fill="#181818" />
+                <circle cx="24" cy="24" r="6" fill="#FF7A1A"/>
+                <text x="60" y="32" fill="#EDEDED" font-family="Inter, Arial" font-size="20">ToxenOS — Desktop</text>
+
+                <!-- Terminal mock -->
+                <rect x="0" y="80" width="680" height="380" rx="10" fill="#0b0b0b" stroke="#FF7A1A" stroke-opacity="0.06"/>
+                <text x="18" y="110" fill="#EDEDED" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, monospace" font-size="14">root@toxen:~$ uname -a</text>
+                <text x="18" y="138" fill="#c6b09a" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, monospace" font-size="13">ToxenOS 1.0 x86</text>
+              </g>
+            </svg>
+            <figcaption class="sr-only">Preview of ToxenOS desktop</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section section-features">
+      <div class="container section-inner">
+        <h2 class="section-title">Key Features</h2>
+        <p class="section-lead">Designed with power users and developers in mind — performance, security, and control.</p>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon">🧩</div>
+            <h3>Lightweight by Design</h3>
+            <p>Small footprint, fast boot, and efficient runtime for older and newer systems.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">🔐</div>
+            <h3>Secure Architecture</h3>
+            <p>Hardened defaults, secure packages, and careful update policy to protect your data.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">⚙️</div>
+            <h3>Fully Customizable</h3>
+            <p>Tweak the UI, shell, and workflows to fit your needs — from desktop to server setups.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">💻</div>
+            <h3>Terminal-Powered Efficiency</h3>
+            <p>Powerful CLI tools and preinstalled developer utilities for rapid work.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-about">
+      <div class="container section-inner">
+        <div class="about-grid">
+          <div>
+            <h2>About ToxenOS</h2>
+            <p>
+              ToxenOS is engineered for developers, power users, and anyone who wants
+              a fast, responsive, and customizable environment. It blends performance with modern aesthetics,
+              offering a workflow designed for focus, stability and long-term reliability.
+            </p>
+            <p class="muted">Enterprise-ready feel with the simplicity you need to get things done.</p>
+          </div>
+
+          <div class="card about-card">
+            <h3>Why choose ToxenOS?</h3>
+            <ul>
+              <li>Fast boot & low memory usage</li>
+              <li>Simple, secure defaults</li>
+              <li>Comprehensive command set and docs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section section-gallery">
+      <div class="container section-inner">
+        <h2 class="section-title">Screenshots</h2>
+        <p class="section-lead">A few glimpses at the desktop, file manager, terminal, and settings.</p>
+
+        <div class="gallery-grid">
+          <!-- Keep images inline SVG placeholders -->
+          <div class="shot" aria-hidden="true">
+            <svg viewBox="0 0 600 360" class="shot-svg"><rect width="100%" height="100%" rx="12" fill="#0b0b0b"/><text x="50%" y="50%" fill="#FF7A1A" font-size="22" dominant-baseline="middle" text-anchor="middle">Desktop</text></svg>
+          </div>
+          <div class="shot" aria-hidden="true">
+            <svg viewBox="0 0 600 360" class="shot-svg"><rect width="100%" height="100%" rx="12" fill="#0b0b0b"/><text x="50%" y="50%" fill="#FF7A1A" font-size="22" dominant-baseline="middle" text-anchor="middle">File Manager</text></svg>
+          </div>
+          <div class="shot" aria-hidden="true">
+            <svg viewBox="0 0 600 360" class="shot-svg"><rect width="100%" height="100%" rx="12" fill="#0b0b0b"/><text x="50%" y="50%" fill="#FF7A1A" font-size="22" dominant-baseline="middle" text-anchor="middle">Terminal</text></svg>
+          </div>
+          <div class="shot" aria-hidden="true">
+            <svg viewBox="0 0 600 360" class="shot-svg"><rect width="100%" height="100%" rx="12" fill="#0b0b0b"/><text x="50%" y="50%" fill="#FF7A1A" font-size="22" dominant-baseline="middle" text-anchor="middle">Settings</text></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT'S NEW / NEWS -->
+    <section id="whats-new" class="section section-news">
+      <div class="container section-inner">
+        <h2 class="section-title">What's New</h2>
+        <div class="news-list">
+          <article class="news-item">
+            <time datetime="2025-09-10">Sep 10, 2025</time>
+            <h3>Release 1.0 — First Public Release</h3>
+            <p>Stable release with core features, improved installer, and updated build tools.</p>
+            <a class="link-more" href="#">Read more</a>
+          </article>
+
+          <article class="news-item">
+            <time datetime="2025-11-02">Nov 2, 2025</time>
+            <h3>Security Hardening Update</h3>
+            <p>Package updates and default firewall rules improved to reduce attack surface.</p>
+            <a class="link-more" href="#">Read more</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOADS (Lower on page) -->
+    <section id="downloads" class="section section-downloads">
+      <div class="container section-inner">
+        <h2 class="section-title">Downloads</h2>
+        <p class="section-lead">Choose your architecture. The 64-bit ISO is currently unavailable.</p>
+
+        <div class="download-grid">
+          <div class="download-card">
+            <h3>Download 32-bit</h3>
+            <p class="muted">Optimized for wide compatibility and older hardware.</p>
+            <a class="btn btn-primary big" href="downloads/toxenos-1.0-i386.iso" download>Download 32-bit ISO</a>
+          </div>
+
+          <div class="download-card disabled">
+            <h3>Download 64-bit</h3>
+            <p class="muted">64-bit version will be released soon.</p>
+            <button class="btn btn-disabled big" aria-disabled="true" id="btn64">Download 64-bit ISO</button>
+            <small class="disabled-note" id="disabledNote" aria-hidden="true">64-bit version currently unavailable.</small>
+          </div>
+        </div>
+
+        <aside class="sysreq">
+          <h4>System Requirements</h4>
+          <ul>
+            <li>RAM: 1 GB (min) / 2 GB (recommended)</li>
+            <li>Disk: 8 GB free</li>
+            <li>Architecture: x86 (32-bit)</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- DOCUMENTATION CTA -->
+    <section class="section doc-cta">
+      <div class="container">
+        <div class="doc-cta-inner">
+          <h2>Read the full changelog & command list</h2>
+          <p>Everything you changed, every command, and developer notes are available in the documentation.</p>
+          <a class="btn btn-docs large" href="https://example.com/toxenos-docs" target="_blank" rel="noopener">View Updates, Changes & Commands</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section id="community" class="section section-community">
+      <div class="container section-inner">
+        <h2 class="section-title">Community & Support</h2>
+        <p>Join the discussion, report issues, or contribute on GitHub and community forums.</p>
+
+        <div class="community-links">
+          <a class="community-btn" href="#" target="_blank" rel="noopener">GitHub</a>
+          <a class="community-btn" href="#" target="_blank" rel="noopener">Forums</a>
+          <a class="community-btn" href="#" target="_blank" rel="noopener">Chat</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand-small"><span class="toxen">Toxen</span><span class="os">OS</span></div>
+      <small>© <span id="year"></span> ToxenOS — All rights reserved.</small>
+      <nav class="foot-nav">
+        <a href="#privacy">Privacy</a>
+        <a href="#license">License</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div id="tooltip" class="tooltip" role="status" aria-live="polite">64-bit version currently unavailable.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
